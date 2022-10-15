@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # need to import to do view here
-from todo.views import get_todo_list
+from todo.views import get_todo_list, add_item
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # we put here the url that will trigger the link path
-    path('', get_todo_list, name='get_todo_list')
+    path('', get_todo_list, name='get_todo_list'),
+    path('add', add_item, name='add')
 ]
