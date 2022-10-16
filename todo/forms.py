@@ -7,4 +7,5 @@ from .models import Item
 class ItemForm(forms.ModelForm):
     class Meta:
         model = Item
-        fields = '__all__'
+        fields = ['name', 'done']
+        # '__all__' for all of them
