@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #add todo folder from templates
+    # add todo folder from templates
     'todo'
 ]
 
@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
-    #'default': {
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': BASE_DIR / 'db.sqlite3',
-    #}
-#}
+# DATABASES = {
+# 'default': {
+# 'ENGINE': 'django.db.backends.sqlite3',
+# 'NAME': BASE_DIR / 'db.sqlite3',
+# }
+# }
 DATABASES = {
     'default': dj_database_url.parse('postgres://veespkiguineek:af1c2fe7490940d7cd968773315c70376cdd52b2dce7eb713d907a7939ab33d4@ec2-35-170-146-54.compute-1.amazonaws.com:5432/d2eut7e0viarbm')
 }
